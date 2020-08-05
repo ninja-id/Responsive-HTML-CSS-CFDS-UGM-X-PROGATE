@@ -1,0 +1,315 @@
+/*Responsive Tablets*/
+@media screen and (max-width: 1000px) {
+
+    /*Top Wrapper and Header*/
+    .top-wrapper {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+        
+    }
+    .menu {
+        position: fixed;
+        width: 85%;
+        height: 100%;
+        background: #000000;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+        z-index: 10;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .menu {
+        right: 0;
+    }
+    /*End Header Section*/
+
+    /*Main Content Responsive Tablet*/
+    .main-content-container {
+        flex-direction: column;
+    }
+
+    .main-content-about-txt {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .main-content-about-img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .main-content-about-img img {
+        width: 100%;
+    }
+
+    .navigasinext {
+        margin-top: 70px;
+    }
+
+    .main-service-content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-service-content {
+        width: 100%;
+    }
+    /*End Main Content*/
+
+    /*Service Section Responsive Tablet*/
+    .services h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .full-text {
+        display: none;
+    }
+
+    .short-text {
+        display: block;
+    }
+
+    .service {
+        width: 50%;
+    }
+
+    .service:last-child {
+        width: 50%;
+        margin: 30px auto 0 auto;
+    }
+
+    .service .fab,
+    .service .fas {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .service h3 {
+        font-size: 18px;
+    }
+
+    .service p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        text-align: justify;
+    }
+    /*End Service Section*/
+
+    /*Contact Form Section Responsive Tablets*/
+    input,
+    textarea {
+        /* width: 100%; */
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.8em;
+    }
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-submit {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*End Contact Form Section*/
+
+    /*Footer Section Responsive Tablets*/
+    footer {
+        width: 100%;
+        padding-left: 0;
+        margin-right: auto;
+        margin-right: auto;
+    }
+    h4 {
+        text-align: left;
+        padding-left: 10px;
+    }
+    .footer-box {
+        width: 50%;
+        display: inline-block;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .copy-container {
+        width: 100%;
+        margin:0 auto;
+        max-width:800px;
+        display: flex;
+        height: auto;
+        
+    }
+
+    .footer-box {
+        margin:0 auto;
+        padding:0 12px;
+    }
+    /*End Footer Section*/
+
+    /*Contact Form Section Responsive Tablets*/
+    input{
+        width: 400px;
+        margin: 10px auto;
+        font-size: 0.8em;
+    }
+    textarea {
+        width: 400px;
+        height: 100px;
+        margin: 10px auto;
+        font-size: 0.8em;
+    }
+    .contact-form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0px auto;
+    }
+
+    .contact-submit {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*End Contact Form Section*/
+}
+
+/*Responsive Smartphones */
+@media all and (max-width: 670px) {
+    /*Service Section Responsif Smartphones*/
+
+    .services h2 {
+        font-size: 18px;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 35px;
+        border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+    }
+
+    .service:last-child {
+        margin: 0;
+        width: 100%;
+        border: none;
+    }
+
+    .service h3 {
+        font-size: 15px;
+    }
+
+    .service .fab,
+    .service .fas {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .service p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    /*End Service Section*/
+
+    /*Contact Form Responsive Smartphones*/
+    input{
+        /* width: 100%; */
+        width: 400px;
+        height:40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    textarea{
+        width: 400px;
+        height:150px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .contact-submit {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .copy-container {
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    /*End Contact Form Section*/
+
+    /*Footer Sectin Responsive Smartphones*/
+    footer {
+        width: 100%;
+    }
+    h4 {
+        width: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-list h4 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li a {
+        text-align: center;
+    }
+    .footer-box {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        padding-top: 50px;
+    }
+
+    .copyright {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .copyright p{
+        margin: auto;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        /* background-color: #1e030d; */
+    }
+    /*End Footer Section*/
+
+
+    /* btn wrapper */
+    .btn-wrapper {
+        margin-top: 70px;
+        /* display: none; */
+    }
+    /* end btn wrapper */
+}
